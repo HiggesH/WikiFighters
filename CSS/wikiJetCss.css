@@ -1,0 +1,124 @@
+:root{
+    --var1: #C21E4B;
+    --var2: #000000;
+    --var3: #C0C0C0;
+    --var4: #FFFFFF;
+    --var5: #fffb00;
+}
+
+body{
+    background: url(/assets/IMG/Back/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--var2);
+    font-family: Ace;
+}
+
+@font-face {
+    font-family: Ace;
+    src: url(/assets/Fonts/ACES07_Regular.otf);
+}
+
+/*? Inicio da Pagina Principal*/
+
+.menu-nav img{
+    width: 1900px;
+    height: 300px;
+    margin: 0 auto;
+}
+.introducao img{
+    width: 1900px;
+}
+.menu-nav ul li { 
+    display: inline;
+}
+.menu-nav ul li a { 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:120%;
+    padding: 10px 160px; 
+    display: inline-block; /* visual do link */ 
+    background-color: var(--var5); 
+    color: #333; 
+    text-decoration: none; 
+    border-bottom:3px solid var(--var2); 
+}
+.menu-nav ul li a:hover { 
+    background-color:#D6D6D6;
+    color: #6D6D6D;
+    border-bottom:3px solid #EA0000;
+    font-size: 150%;
+}
+
+.div_main_pag_prinicp h1{
+    font-family: Elephant;
+    text-align: center;
+}
+
+.div_main_pag_prinicp p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    text-align: center;
+}
+
+.conteudos img{
+    width: 30%;
+}
+
+.conteudos p{
+    text-align: left;
+}
+
+/*? Fim da Pagina Principal*/
+
+/*? Inicio do Conteudo*/
+
+.conteudos_box{
+    display: inline-flex;
+}
+
+.ul_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+    gap: 3em;
+}
+
+.box_cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 5px;
+    background-color: var(--var3);
+    border-color: var(--var1);
+    border-style: solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+a.link_box:link, a.link_box:visited, a.link_box:active{
+    text-decoration: none;
+    color: var(--var2);
+}
+
+a.link_box:hover{
+    color: var(--var5);
+    scale: 1.1;
+}
+
+.box_img{
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+.text_box{
+    font-size: 1.3em;
+}
+
+/*? Fim do Conteudo */
