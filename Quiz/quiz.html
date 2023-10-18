@@ -1,68 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Quiz</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link rel="stylesheet" href="./css/quiz.css">
+            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+            <link rel="shortcut icon" href="../assets/Logo/icone.png" type="image/x-icon">
+        </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Rajdhani:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="shortcut icon" href="../assets/Logo/icone.png" type="image/x-icon">
-</head>
-
-<body>
-
-    <div class="background" id="Background"></div>
-
-        <main>
-            <button class="Start" onclick="StartQuiz()" id="Start">Iniciar</button>
-
-            <div class="card" id="Quiz" style="display: none;">
-                <div class="card-header">
-                    <h1>Quiz</h1>
-                    <br>
-                    <h2>Identifique os caças !!</h2>
-                    <br>
-                    <div class="status">
-                        <h3>Score: <span id="score">0</span></h3>
-                        <h3>Question: <span id="question_number">0</span>/<span id="total">0</span></h3>
-
-                    </div>
-                </div>
-                <div class="card-content">
-                    <div class="img-container">
-                        <img src="" alt="" class="img" id="img">
-                    </div>
-                    <ul class="answer" id="answer">
-
+        <body>
+            <div class="menu-nav">
+                <nav class="nav">
+                    <img src="../assets/Logo/logo.png">
+                    <ul>
+                        <li><a href="../Pagina_Principal.html">Pagina Principal</a></li>
+                        <li><a href="../Navegacao.html">Navegar pelo Site</a></li>
+                        <li><a href="../Personalisacao_Jet.php">Crie seu Caça</a></li>
+                        <li><a href="../Quiz/quiz.html">Quiz</a></li>
                     </ul>
-                </div>
-                <div class="card-footer">
-                    <button class="btn-next" id="next" onclick="NextQuestion()"">Proxímo</button>
+                </nav>
             </div>
-        </div>
-        <div class=" Result-Card" id="Result-Card" style="display: none;">
-                        <div class="card-header">
-                            <h1>Parabéns</h1>
+            <div class="background" id="Background"></div>
+            <main>
+                <button class="Start" onclick="StartQuiz()" id="Start">Iniciar</button>
+                <div class="card" id="Quiz" style="display: none;">
+                    <div class="card-header">
+                        <h1>Quiz</h1>
+                        <br>
+                        <h2>Identifique os caças !!</h2>
+                        <br>
+                        <div class="status">
+                            <h3>Score: <span id="score">0</span></h3>
+                            <h3>Question: <span id="question_number">0</span>/<span id="total">0</span></h3>
                         </div>
-                        <div class="Result-content">
-                            <h1>Pontuação</h1>
-                            <h2><span id="score_result">0</span></h2>
-                            <div class="result-summary">
-                                <h3>Você acertou <span id="result-correct-answer">0</span> de <span id="result-total-question">0</span></h3>
-                            </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="img-container">
+                            <img src="" alt="" class="img" id="img">
                         </div>
-                        <div class="card-footer">
-                            <button class="btn-result" onclick="RestartQuiz()">Reiniciar</button>
-
-                        </div>
-
+                        <ul class="answer" id="answer">
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-next" id="next" onclick="NextQuestion()"">Proxímo</button>
+                    </div>
                 </div>
-        </main>
-    <script src="./js/script.js"></script>
-</body>
-
-</html>
+                <div class=" Result-Card" id="Result-Card" style="display: none;">
+                    <div class="card-header">
+                        <h1>Parabéns</h1>
+                    </div>
+                    <div class="Result-content">
+                        <h1>Pontuação</h1>
+                        <h2><span id="score_result">0</span></h2>
+                        <div class="result-summary">
+                            <h3>Você acertou <span id="result-correct-answer">0</span> de <span id="result-total-question">0</span></h3>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-result" onclick="RestartQuiz()">Reiniciar</button>
+                    </div>
+                </div>
+            </main>
+            <script src="./js/script.js"></script>
+        </body>
+    </html>

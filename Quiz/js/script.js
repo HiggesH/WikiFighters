@@ -5,15 +5,15 @@ const Questions = [
             { name: "F-22", iscorrect: "true" },
             { name: "F-16", iscorrect: "false" },
             { name: "F-18", iscorrect: "false" },
-            { name: "F-26", iscorrect: "false" },
+            { name: "Su-33", iscorrect: "false" },
         ]
     },{
         imageUrl: "assets/F-35.JPG",
         options: [
+            { name: "F-2", iscorrect: "false" },
+            { name: "F/A-XX", iscorrect: "false" },
+            { name: "Rafaele", iscorrect: "false" },
             { name: "F-35", iscorrect: "true" },
-            { name: "F-24", iscorrect: "false" },
-            { name: "F-25", iscorrect: "false" },
-            { name: "F-26", iscorrect: "false" },
         ]
     }
 
@@ -40,20 +40,18 @@ function StartQuiz() {
     const Total = document.getElementById("total");
     total.innerText = Questions.length;
      // Representando a questão pelo numero + 1 para ser iniciado como 1 e não 0 do array
-     Question_number.innerText = CurrentQuestion + 1;
+    Question_number.innerText = CurrentQuestion + 1;
 
     renderQuestion();
     Card_Quiz.style.display = "block";
 
-   
 }
 
 
 // Renderiza a questao pelo id pegando seu url e as opcoes
 function renderQuestion(QuestionId = CurrentQuestion) {
-  
-      // Altera o url da imagem
-      elementImg.src = Questions[QuestionId].imageUrl;
+    // Altera o url da imagem
+    elementImg.src = Questions[QuestionId].imageUrl;
 
 
     
@@ -66,19 +64,15 @@ function renderQuestion(QuestionId = CurrentQuestion) {
         // Renderizando imagem de fundo
         Background.style.backgroundImage = `url(${Questions[QuestionId].imageUrl})`;
         
-        
         // Criando os botoes
         button.innerText = Question.name;
         button.classList.add("question");
         answer.appendChild(list);
         list.appendChild(button);
 
-
         if(Question.iscorrect) {
             button.dataset.correct = Question.iscorrect;
         }
-     
- 
 
         // Adiciona o click no botão 
         button.addEventListener("click", selectAwnser);
@@ -93,9 +87,6 @@ function selectAwnser(event) {
     // Verificando se o botao clicado esta correto
     const correct = selectedButton.dataset.correct;
     
-    
-
-    // // Se correto adiciona a classe correto se nao a incorreta
     if(correct === "true") {
         selectedButton.classList.add("correct");
         Points+= 100;
@@ -106,7 +97,6 @@ function selectAwnser(event) {
     } else {
         selectedButton.classList.add("incorrect");
 
-        
     }
     const array = document.querySelectorAll(".question");
     // Percorrendo o array de botoes e adicionando a classe correta se ele ao botão que esta certo e desabilitando os outros botoes	
@@ -119,7 +109,6 @@ function selectAwnser(event) {
     nextButton.style.display = "block";
 
 }
-
 
 function NextQuestion() {
     // Inclementando 1 na variavel
@@ -144,7 +133,6 @@ function NextQuestion() {
     }
 }
 
-
 function renderResult() {
     Card_Quiz.style.display = "none";
     Card_Result.style.display = "block";
@@ -154,7 +142,7 @@ function renderResult() {
     total.innerText = Questions.length;
     result_correct.innerText = Correct_Questions_value;
     ScoreResult.innerText = Points;
-  }
+}
 
 function RestartQuiz(){
     // Resetando valores
@@ -165,7 +153,6 @@ function RestartQuiz(){
     // trocando os displays
     Card_Result.style.display = "none";
     nextButton.style.display = "none";
-  
 
     // Resetando area onde fica as respostas
     answer.innerHTML = "";
@@ -174,8 +161,7 @@ function RestartQuiz(){
     elementPoints.innerText = Points;
 
     // Representando a questão pelo numero + 1 para ser iniciado como 1 e não 0 do array
-     Question_number.innerText = CurrentQuestion + 1;
-   
+    Question_number.innerText = CurrentQuestion + 1;
     //  Renderizando o quiz e trocando o display do card
     renderQuestion();
     Card_Quiz.style.display = "block";
