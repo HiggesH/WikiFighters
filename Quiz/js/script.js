@@ -15,8 +15,72 @@ const Questions = [
             { name: "Rafaele", iscorrect: "false" },
             { name: "F-35", iscorrect: "true" },
         ]
+    },{
+        imageUrl: "assets/FA-XX.jpeg",
+        options: [
+            { name: "F-90", iscorrect: "false" },
+            { name: "F/A-XX", iscorrect: "true" },
+            { name: "J-20", iscorrect: "false" },
+            { name: "Su-10", iscorrect: "false" },
+        ]
+    },{
+        imageUrl: "assets/Su-47.png",
+        options: [
+            { name: "Su-47", iscorrect: "true" },
+            { name: "Su-45", iscorrect: "false" },
+            { name: "Su-57", iscorrect: "false" },
+            { name: "Su-33", iscorrect: "false" },
+        ]
+    },{
+        imageUrl: "assets/YF-23.jpg",
+        options: [
+            { name: "XY-23", iscorrect: "false" },
+            { name: "XF-23", iscorrect: "false" },
+            { name: "YF-23", iscorrect: "true" },
+            { name: "F-23", iscorrect: "false" },
+        ]
+    },{
+        imageUrl: "assets/Mirage.jpg",
+        options: [
+            { name: "Mirage", iscorrect: "true" },
+            { name: "F-12", iscorrect: "false" },
+            { name: "Migare", iscorrect: "false" },
+            { name: "Migera", iscorrect: "false" },
+        ]
+    },{
+        imageUrl: "assets/Gripen.jpg",
+        options: [
+            { name: "Gripan", iscorrect: "false" },
+            { name: "Gripen", iscorrect: "true" },
+            { name: "Gripin", iscorrect: "false" },
+            { name: "Gripon", iscorrect: "false" },
+        ]
+    },{
+        imageUrl: "assets/F-22_IMG_VN.png",
+        options: [
+            { name: "F-22 de Muv Luv", iscorrect: "true" },
+            { name: "F-22 de Ace Combat", iscorrect: "false" },
+            { name: "F-22 de F-22", iscorrect: "false" },
+            { name: "F-22 de Ace Combat 2", iscorrect: "false" },
+        ]
+    },{
+        imageUrl: "assets/A-10_IMG_VN.png",
+        options: [
+            { name: "A-10 de Ace Combat", iscorrect: "false" },
+            { name: "A-10 de de Homem de Ferro", iscorrect: "false" },
+            { name: "A-10 de A-10 Tank Killer", iscorrect: "false" },
+            { name: "A-10 de Muv Luv", iscorrect: "true" },
+        ]
+    },{
+        imageUrl: "assets/Su-47_IMG_VN.png",
+        options: [
+            { name: "Su-47 de Top Gun", iscorrect: "false" },
+            { name: "Su-47 de Muv Luv", iscorrect: "true" },
+            { name: "Su-47 de Mirror Wars", iscorrect: "false" },
+            { name: "Su-47 de Avenger", iscorrect: "false" },
+        ]
     }
-
+    
 ];
 
 const elementImg = document.getElementById("img");

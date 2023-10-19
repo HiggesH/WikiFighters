@@ -8,18 +8,12 @@
     --var5: #fffb00;
 }
 
-body{
-    background: url(/assets/IMG/Back/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: var(--var2);
-    font-family: Ace;
-}
-
 @font-face {
     font-family: Ace;
-    src: url(/assets/Fonts/ACES07_Regular.otf);
+    src: url(../assets/Fonts/ACES07_Regular.otf);
 }
+
+
 
 /** Fim Geral*/
 
@@ -34,6 +28,7 @@ body{
 .menu-nav ul li { 
     display: inline;
 }
+
 .menu-nav ul li a { 
     display: inline-block;
     justify-content: center;
@@ -44,6 +39,7 @@ body{
     text-decoration: none; 
     border-bottom:3px solid var(--var1); 
 }
+
 .menu-nav ul li a:hover { 
     background-color:#D6D6D6;
     color: #6D6D6D;
@@ -53,12 +49,17 @@ body{
 
 /*! Fim do Menu*/
 
+body{
+    font-family: Ace;
+}
+
 main{
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Ace;
 }
 
 .card,.Result-Card{
