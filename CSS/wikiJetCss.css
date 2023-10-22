@@ -9,7 +9,7 @@
 }
 
 body {
-    background: url(/assets/IMG/Back/background.jpg);
+    background: url(../assets/IMG/Back/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--var2);
@@ -18,7 +18,7 @@ body {
 
 @font-face {
     font-family: Ace;
-    src: url(/assets/Fonts/ACES07_Regular.otf);
+    src: url(../assets/Fonts/ACES07_Regular.otf);
 }
 
 p {
@@ -29,7 +29,7 @@ p {
 /*! Inicio do Menu*/
 
 .menu-nav img {
-    width: 1900px;
+    width: 1850px;
     height: 300px;
     margin: 0;
 }
@@ -41,7 +41,7 @@ p {
     display: inline-block;
     justify-content: center;
     padding: 10px 160px; 
-    margin-left: 0.65em;
+    margin-left: 0.40em;
     background-color: var(--var4); 
     color: #333333; 
     font-size: 120%;
@@ -52,7 +52,7 @@ p {
     background-color:#D6D6D6;
     color: #6D6D6D;
     border-bottom:3px solid #EA0000;
-    font-size: 150%;
+    font-size: 140%;
 }
 
 /*! Fim do Menu*/
@@ -213,3 +213,228 @@ a.link_box:hover {
 }
 
 /*? Fim da Pag Navegação */
+
+/*TODO Inicio do padrão da Tabela das Pag*/
+
+.tabela_jet{
+    border: 2px;
+    border-color: #0b00a1;
+    border-style: solid;
+    background: #ebebeb;
+    color: var(--var2);
+    margin: 0.5em 0 0.5em 1em;
+    padding: 5px;
+    width: 25em;
+    float: right;
+    clear: right;
+    line-height: 1.1em;
+}
+
+.table_img{
+    text-align: center;
+    width: 400px;
+    height: 300px;
+}
+
+.table_img_2{
+    text-align: center;
+    width: 400px;
+    height: 600px;
+}
+
+.table_img_3{
+    text-align: center;
+    width: 400px;
+    height: 450px;
+}
+
+.table_img_4{
+    text-align: center;
+    width: 400px;
+    height: 450px;
+}
+
+.table_img_5{
+    text-align: center;
+    width: 400px;
+    height: 400px;
+}
+
+.table_img_6{
+    text-align: center;
+    width: 400px;
+    height: 400px;
+}
+
+.table_img_7{
+    text-align: center;
+    width: 400px;
+    height: 400px;
+}
+
+.table_img_8{
+    text-align: center;
+    width: 400px;
+    height: 300px;
+}
+
+.table_img_9{
+    text-align: center;
+    width: 400px;
+    height: 300px;
+}
+
+.table_img_10{
+    text-align: center;
+    width: 400px;
+    height: 300px;
+}
+
+.table_img_11{
+    text-align: center;
+    width: 400px;
+    height: 300px;
+}
+
+.table_img_12{
+    text-align: center;
+    width: 400px;
+    height: 500px;
+}
+
+.table_img_13{
+    text-align: center;
+    width: 400px;
+    height: 400px;
+}
+
+.table_img_14{
+    text-align: center;
+    width: 400px;
+    height: 400px;
+}
+
+.table_img_15{
+    text-align: center;
+    width: 400px;
+    height: 400px;
+}
+
+.sub_titulo_table{
+    text-align: center;
+    padding: 5px;
+    background-color: #001aff;
+    color: #FFFFFF;
+}
+
+.description_p{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title_Table{
+    text-align: center;
+}
+
+td{
+    text-align: left;
+    padding: 2px;
+}
+/*TODO Fim do Padrão da Tabela das Pag*/
+
+/*? Inico do Padrão das IMG da Pag*/
+
+.IMG_PADRAO{
+    width: 400px;
+    height: 350px;
+    border: 3px;
+    border-style: solid;
+    border-color: #0b00a1;
+    border-radius: 15px;
+    margin-top: 1em;
+}
+
+.IMG_PADRAO_ESP{
+    width: 400px;
+    height: 500px;
+    border: 3px;
+    border-style: solid;
+    border-color: #0b00a1;
+    border-radius: 15px;
+    margin-top: 1em;
+}
+
+.curio{
+    width: 400px;
+    height: 350px;
+    border: 3px;
+    border-style: solid;
+    border-color: #0b00a1;
+    border-radius: 15px;
+    margin-top: 1em;
+}
+
+.curio_VN{
+    width: 400px;
+    height: 600px;
+    border: 3px;
+    border-style: solid;
+    border-color: #0b00a1;
+    border-radius: 15px;
+    background-color: #cccccc;
+    margin-top: 1em;
+}
+
+.curio_VN_ESP{
+    width: 400px;
+    height: 450px;
+    border: 3px;
+    border-style: solid;
+    border-color: #0b00a1;
+    border-radius: 15px;
+    background-color: #cccccc;
+    margin-top: 1em;
+}
+
+.curio_VN_ESP_2{
+    width: 600px;
+    height: 600px;
+    border: 3px;
+    border-style: solid;
+    border-color: #0b00a1;
+    border-radius: 15px;
+    background-color: #cccccc;
+    margin-top: 1em;
+}
+
+.Descripcion{
+    font-size: 1em;
+    margin-left: 5em;
+    border-style: solid;
+    border-color: #fbff00;
+    border-radius: 15px;
+    background-color: #ffffff;
+    width: 14em;
+    padding: 10px;
+}
+
+/*? FIm do Padrão das IMG da Pag*/
+
+/*! Inicio do Link da Referencia */
+
+a.referencia:link, a.referencia:active {
+    font-size: 1.2em;
+    color: #d10000;
+}
+
+a.referencia:visited {
+    color: #ac0042;
+    scale: 1.1;
+}
+
+a.referencia:hover {
+    color: #d0ff00;
+    scale: 1.1;
+}
+
+/*! Fim do Link da Referencia */
