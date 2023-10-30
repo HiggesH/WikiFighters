@@ -8,6 +8,8 @@ class Personaliza {
 
         try {
             $pdo = new PDO("mysql:dbname=".$nome.";host=".$host, $usuario, $senha);
+            $pdo = new PDO("mysql:dbname=jetpersonalizacao;host=localhost", "root", "sua_senha");
+
         } catch (PDOException $e) {
             $msgERRO = $e->getMessage();
         }
@@ -56,7 +58,7 @@ class Personaliza {
                     $foguetes,
                     $radar,
                     $outras) 
-            {     $conn = new PDO("mysql:host=localhost;dbname=jetpersonalizacao","root");
+            {     $conn = new PDO("mysql:host=localhost;dbname=jetpersonalizacao","root", "1234");
                     $sql = $conn->prepare("SELECT ID_Caca FROM criecaca WHERE pais = ".$pais."");
                     $sql->execute();
 
@@ -99,7 +101,7 @@ class Personaliza {
                     Teto_Servi,
                     Metra_Canhao,
                     Capacidade_carga,
-                    Hardpoints,
+                    hardpoints,
                     Misseis_Ar,
                     Misseis_Terra,
                     Misseis_Navio,
@@ -109,7 +111,7 @@ class Personaliza {
                     Radar, 
                     Outros) 
                 VALUES (
-                   :nome, :tipo_missao, :geracao, :pais, :fabricante, :periodo_producao, :custo_unitario, :custo_de_desevolvimento, :tempo_de_desevolvimento, :primeiro_voo, :introduzido, :tripulacao, :comprimento, :envergadura, :altura, :area_da_asa, :peso_va, :peso_bru, :peso_che, :capacidade_combustivel, :numero_motor, :tipo_motor, :fabricante_motor, :empuxo_seco, :empuxo_pos_combus,:velocidade_maxi,:velocida_mach,:alcance,:alcance_beleico,:razao_subida,:teto_maximo,:metrala_canhao,:capacidade_carga,:hardpoints,:misseis_ar,:misseis_terra,:misseis_navio,:misseis_radiacao,:bombas,:foguetes,:radar,:outras
+                :nome, :tipo_missao, :geracao, :pais, :fabricante, :periodo_producao, :custo_unitario, :custo_de_desevolvimento, :tempo_de_desevolvimento, :primeiro_voo, :introduzido, :tripulacao, :comprimento, :envergadura, :altura, :area_da_asa, :peso_va, :peso_bru, :peso_che, :capacidade_combustivel, :numero_motor, :tipo_motor, :fabricante_motor, :empuxo_seco, :empuxo_pos_combus,:velocidade_maxi,:velocida_mach,:alcance,:alcance_beleico,:razao_subida,:teto_maximo,:metrala_canhao,:capacidade_carga,:hardpoints,:misseis_ar,:misseis_terra,:misseis_navio,:misseis_radiacao,:bombas,:foguetes,:radar,:outras
                 )"
             );
             $sql1->bindValue(":nome", $nome);
@@ -154,7 +156,7 @@ class Personaliza {
             $sql1->bindValue(":foguetes", $foguetes);
             $sql1->bindValue(":radar",$radar );
             $sql1->bindValue(":outras",$outras );
-              
+            
             if ($sql1->execute()) {
                 return true;
             } else {

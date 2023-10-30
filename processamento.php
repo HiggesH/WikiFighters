@@ -1,0 +1,105 @@
+<?php
+
+session_start();
+include_once("conexao.php");
+/** Item acima importante para conectar com o BC*/
+
+$result_usuario = "INSERT INTO CrieCaca (
+    Nome_Caca, 
+    Tipo_Missao, 
+    Geracao,
+    Pais,
+    Fabricante,
+    Periodo_Producao,
+    Custo_Unitaio,
+    Custo_Desevolvimento,
+    Tempo_Develo,
+    Primeiro_Voo,
+    Introduzido,
+    Tripulacao,
+    Comprimento,
+    Envergadura,
+    Altura,
+    Área_Asa,
+    Peso_Va,
+    Peso_Bru,
+    Peso_Cheio,
+    Capacidade_Combustivel,
+    Numero_Motor,
+    Tipo_Mo,
+    Fabricante_Modelo,
+    Empuxo_Seco,
+    Empuxo_Pós_Com,
+    Velocidade_Max,
+    VelocidadeMach,
+    Alcance,
+    Alcance_Belico,
+    Razao_Sub,
+    Teto_Servi,
+    Metra_Canhao,
+    Capacidade_carga,
+    Hardpoints,
+    Misseis_Ar,
+    Misseis_Terra,
+    Misseis_Navio,
+    Misseis_Radicao,
+    Bombas,
+    Foguetes,
+    Radar, 
+    Outros,
+    created)  VALUES
+('$nome', 
+'$tipo_missao', 
+'$geracao', 
+'$pais', 
+'$fabricante', 
+'$periodo_producao', 
+'$custo_unitario', 
+'$custo_de_desevolvimento', 
+'$tempo_de_desevolvimento', 
+'$primeiro_voo', 
+'$introduzido', 
+'$tripulacao', 
+'$comprimento', 
+'$envergadura', 
+'$altura', 
+'$area_da_asa', 
+'$peso_va', 
+'$peso_bru', 
+'$peso_che', 
+'$capacidade_combustivel', 
+'$numero_motor', 
+'$tipo_motor', 
+'$fabricante_motor', 
+'$empuxo_seco', 
+'$empuxo_pos_combus', 
+'$velocidade_maxi', 
+'$velocida_mach', 
+'$geracao', 
+'$alcance', 
+'$alcance_beleico', 
+'$razao_subida', 
+'$teto_maximo', 
+'$metrala_canhao', 
+'$capacidade_carga', 
+'$hardpoints', 
+'$misseis_ar', 
+'$misseis_terra', 
+'$misseis_navio', 
+'$misseis_radiacao', 
+'$bombas', 
+'$foguetes', 
+'$radar', 
+'$outras', 
+NOW())";
+
+$result_usuario = mysqli_query($conn, $result_usuario);
+
+if(mysqli_insert_id($conn)) {
+    $_SESSION['msg'] = "<p class='mensagem' style='color: green;'> Caça Cadastrado com Sucesso</p>";
+    header("Location: Personalisacao_Jet.php");
+} else {
+    $_SESSION['msg'] = "<p class='mensagem' style='color:red;'> Caça não foi cadastrado com Sucesso</p>";
+    header("Location: Personalisacao_Jet.php");
+}
+?>

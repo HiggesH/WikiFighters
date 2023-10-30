@@ -6,9 +6,7 @@ create table CrieCaca (   /*gerando tabelas*/
 	ID_Caca int (10) primary key auto_increment,
     Nome_Caca varchar (110),
     /*Descrição do Historico*/
-    Tipo_Missao enum ('Multimissão', 'Multitarefa', 'Multifunção', 'Superioridae Aérea', 'Ataque ao Solo', 'Treinamento', 'Transporte', 'AWACS', 'AGS', 'AEW', 'Bombardeiro') 
-    check (Tipo_Missao like '%Multimissão%' and '%Multitarefa%' and '%Multifunção%' and '%Superioridae Aérea%' and '%Ataque ao Solo%' and '%Treinamento%' and '%Transporte%' 
-						and '%AWACS%' and '%AGS%' and '%AEW%' and '%Bombardeiro%'),
+    Tipo_Missao varchar (100),
     Geracao varchar (30),
     Pais varchar (50),
     Fabricante varchar (200),
