@@ -261,9 +261,9 @@ function NextQuestion() {
 
 
 function renderResult() {
-    // Esconde o card quiz
+    //esconde o card quiz
     Card_Quiz.style.display = "none";
-    // Exibe o card resultado
+    //exibe o card resultado
     Card_Result.style.display = "block";
 
     //seleciona os elemntos html pelo seus ids
@@ -271,15 +271,9 @@ function renderResult() {
     const result_correct = document.getElementById("result-correct-answer");
     const total = document.getElementById("result-total-question");
 
-/*adicionado o texto dos elementos baseando nos resultados
-*/
-    // Exibe o total de questões
+    //add texto dos elementos baseando nos resultados
     total.innerText = Questions.length;
-
-    // Exibe o número de respostas corretas
     result_correct.innerText = Correct_Questions_value;
-
-    // Exibe a pontuação total do jogador
     ScoreResult.innerText = Points;
   }
 
@@ -303,7 +297,7 @@ function RestartQuiz(){
     // Representando a questão pelo numero + 1 para ser iniciado como 1 e não 0 do array
      Question_number.innerText = CurrentQuestion + 1;
    
-    // Renderizando o quiz e trocando o display do card
+    //  Renderizando o quiz e trocando o display do card
     renderQuestion();
     Card_Quiz.style.display = "block";
 }
