@@ -64,10 +64,6 @@ img{
     }
 }
   
-
-
-
-
 ul{
     list-style: none;
 }
@@ -84,7 +80,7 @@ li button{
 }
 
 li button:not(:disabled):hover{
-    background-color: black;
+    background-color: #c21e4a7a;
     color: white;
     cursor: pointer;
 }
@@ -102,8 +98,8 @@ li button:not(:disabled):hover{
     height: 3rem;
     border: none;
     border: 1px solid gray;
-    background-color: black;
-    color: white;
+    background-color: #c21e4a7a;
+    color: black;
     cursor: pointer;
     border-radius: 16px;
     display: none;
@@ -115,8 +111,8 @@ li button:not(:disabled):hover{
     height: 3rem;
     border: none;
     border: 1px solid gray;
-    background-color: black;
-    color: white;
+    background-color: #c21e4a7a;
+    color: black;
     cursor: pointer;
     border-radius: 16px;
 }
@@ -125,7 +121,7 @@ li button:not(:disabled):hover{
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #000;
+    background-color: #ffffff;
     max-width: 100%;
     height: auto;
     filter: blur(5px); 
@@ -142,12 +138,12 @@ li button:not(:disabled):hover{
 }
 
 .correct{
-    background-color: green;
-    color: white;
+    background-color: rgba(0, 128, 0, 0.301);
+    color: black;
 }
 
 .incorrect{
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.404);
     color: white;
 }
 
@@ -168,7 +164,7 @@ button:disabled{
     height: 3rem;
     border: none;
     border: 1px solid gray;
-    background-color: white;
+    background-color: #c21e4a7a;
     color: black;
     cursor: pointer;
     border-radius: 16px;
@@ -179,7 +175,7 @@ button:disabled{
 }
 
 .Start:hover{
-    background-color: green;
+    background-color: #490c1cc0;
     color: white;
 }
 
@@ -195,5 +191,20 @@ button:disabled{
 
 .result-summary{
     margin-top: 2rem;
+    
+}
+
+.btn-return{
+    width: 15rem;
+    height: 3rem;
+    border: none;
+    border: 1px solid gray;
+    background-color: #c21e4a7a;
+    color: black;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
     
 }

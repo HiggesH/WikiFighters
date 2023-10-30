@@ -9,7 +9,7 @@ create table CrieCaca (   /*gerando tabelas*/
     Tipo_Missao enum ('Multimissão', 'Multitarefa', 'Multifunção', 'Superioridae Aérea', 'Ataque ao Solo', 'Treinamento', 'Transporte', 'AWACS', 'AGS', 'AEW', 'Bombardeiro') 
     check (Tipo_Missao like '%Multimissão%' and '%Multitarefa%' and '%Multifunção%' and '%Superioridae Aérea%' and '%Ataque ao Solo%' and '%Treinamento%' and '%Transporte%' 
 						and '%AWACS%' and '%AGS%' and '%AEW%' and '%Bombardeiro%'),
-    Geracao int (3),
+    Geracao varchar (30),
     Pais varchar (50),
     Fabricante varchar (200),
     Periodo_Producao varchar (100),
@@ -48,7 +48,11 @@ create table CrieCaca (   /*gerando tabelas*/
     /*Descrição Armamento*/
     Metra_Canhao varchar (60),
     Capacidade_carga decimal (8,2),
-    Misseis text,
+    Hardpoints text,
+    Misseis_Ar text,
+    Misseis_Terra text,
+    Misseis_Navio text,
+    Misseis_Radicao text,
     Bombas text,
     Foguetes text,
 

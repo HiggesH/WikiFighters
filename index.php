@@ -1,3 +1,8 @@
+<?php
+require_once 'classes/PersonalJet.php'; //! Estamos direcionando o programa a requirir a pasta Classe e o Usuarios.php
+$u = new Personaliza(); //! Estamos criando uma Usuario
+?>
+
 <!DOCTYPE html>
     <html lang="pt-br">
         <head>
@@ -11,10 +16,10 @@
                 <nav class="nav">
                     <img src="assets/Logo/logo.png">
                     <ul>
-                        <li><a href="index.html">Pagina Principal</a></li>
+                        <li><a href="index.php">Pagina Principal</a></li>
                         <li><a href="Navegacao.html">Navegar pelo Site</a></li>
                         <li><a href="Personalisacao_Jet.php">Crie seu Caça</a></li>
-                        <li><a href="Quiz/quiz.html">Quiz</a></li>
+                        <li><a href="Quiz/index.html">Quiz</a></li>
                     </ul>
                 </nav>
             </div>
